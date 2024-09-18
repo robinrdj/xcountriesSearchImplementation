@@ -27,7 +27,7 @@ function App() {
   const Card = ({country})=>{
     return(
       <>
-      <div style={{
+      <div className="countryCard" style={{
         flexDirection:"column",
         border:"1px solid gray",
         borderRadius:"8px",
@@ -53,7 +53,7 @@ function App() {
         <div className="App">
 
       {filteredCountryData.map((country)=>{
-        return <Card key={country.cca3} country={country} className="countryCard"/>
+        return <Card key={country.cca3} country={country} />
       })}
       
     </div>
