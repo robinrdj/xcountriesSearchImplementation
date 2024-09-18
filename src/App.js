@@ -53,7 +53,7 @@ function App() {
         <div className="App">
 
       {filteredCountryData.map((country)=>{
-        return <Card key={country.cca3} country={country} />
+        return <Card key={country.cca3} country={country} className="countryCard"/>
       })}
       
     </div>
